@@ -1,0 +1,14 @@
+name = "nextjs-cloudflare"
+type = "webpack"
+account_id = "e4ee7271b5dfc50b5b874d80c36f22a6"
+zone_id = "229869a81cdeb6a75f2641d29eeaffe0"
+node_compat = true  # Add this line
+
+[site]
+bucket = ".next"
+entry-point = "pages/index.tsx"
+compatibility_date = "2023-08-29"
+
+[build]
+command = "npm run build"
+output = ".next"
